@@ -1,0 +1,10 @@
+# Core environment for IJIES 20267767 re-analysis (SEED = 20261007). Python 3.13.
+# Versions below are the ones recorded in the original run environment (manuscript, Methods).
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+xgboost==2.1.4
+# scipy is used only by the verification scripts (scipy.stats: Wilcoxon, rankdata).
+# Its version was NOT pinned in the original run environment and is therefore left unpinned here;
+# the re-analysis in this repo was verified with scipy 1.18.1 (a separate verification environment).
+scipy

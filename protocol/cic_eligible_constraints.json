@@ -1,0 +1,80 @@
+{
+ "dataset": "CIC-IDS2017",
+ "rule": "T1 AND passed numeric screen (proposed-eligible, protocol v0.4 Section 6.2 / D12)",
+ "n_eligible": 44,
+ "n_class1": 39,
+ "n_class2_or_3": 5,
+ "eligible": [
+  "CIC-A-avgseg=mean[Bwd]",
+  "CIC-A-avgseg=mean[Fwd]",
+  "CIC-D-nonneg[ACK Flag Count]",
+  "CIC-D-nonneg[Average Packet Size]",
+  "CIC-D-nonneg[Avg Bwd Segment Size]",
+  "CIC-D-nonneg[Avg Fwd Segment Size]",
+  "CIC-D-nonneg[Bwd Header Length]",
+  "CIC-D-nonneg[Bwd Packet Length Max]",
+  "CIC-D-nonneg[Bwd Packet Length Mean]",
+  "CIC-D-nonneg[Bwd Packet Length Min]",
+  "CIC-D-nonneg[Bwd Packet Length Std]",
+  "CIC-D-nonneg[CWE Flag Count]",
+  "CIC-D-nonneg[Down/Up Ratio]",
+  "CIC-D-nonneg[ECE Flag Count]",
+  "CIC-D-nonneg[FIN Flag Count]",
+  "CIC-D-nonneg[Fwd Header Length]",
+  "CIC-D-nonneg[Fwd PSH Flags]",
+  "CIC-D-nonneg[Fwd Packet Length Max]",
+  "CIC-D-nonneg[Fwd Packet Length Mean]",
+  "CIC-D-nonneg[Fwd Packet Length Min]",
+  "CIC-D-nonneg[Fwd Packet Length Std]",
+  "CIC-D-nonneg[Fwd URG Flags]",
+  "CIC-D-nonneg[Max Packet Length]",
+  "CIC-D-nonneg[Min Packet Length]",
+  "CIC-D-nonneg[PSH Flag Count]",
+  "CIC-D-nonneg[Packet Length Mean]",
+  "CIC-D-nonneg[Packet Length Std]",
+  "CIC-D-nonneg[Packet Length Variance]",
+  "CIC-D-nonneg[RST Flag Count]",
+  "CIC-D-nonneg[SYN Flag Count]",
+  "CIC-D-nonneg[Subflow Bwd Bytes]",
+  "CIC-D-nonneg[Subflow Bwd Packets]",
+  "CIC-D-nonneg[Subflow Fwd Bytes]",
+  "CIC-D-nonneg[Subflow Fwd Packets]",
+  "CIC-D-nonneg[Total Backward Packets]",
+  "CIC-D-nonneg[Total Fwd Packets]",
+  "CIC-D-nonneg[Total Length of Bwd Packets]",
+  "CIC-D-nonneg[Total Length of Fwd Packets]",
+  "CIC-D-nonneg[URG Flag Count]",
+  "CIC-D-nonneg[act_data_pkt_fwd]",
+  "CIC-D-nonneg[min_seg_size_forward]",
+  "CIC-O-meanmax[PktLen]",
+  "CIC-O-minmean[PktLen]",
+  "CIC-O-stdrange[PktLen]"
+ ],
+ "eligible_relations_class2_3": [
+  {
+   "rid": "CIC-135",
+   "code": "CIC-O-minmean[PktLen]",
+   "form": "Min Packet Length ≤ Packet Length Mean + 1e-3"
+  },
+  {
+   "rid": "CIC-136",
+   "code": "CIC-O-meanmax[PktLen]",
+   "form": "Packet Length Mean ≤ Max Packet Length + 1e-3"
+  },
+  {
+   "rid": "CIC-137",
+   "code": "CIC-O-stdrange[PktLen]",
+   "form": "Packet Length Std ≤ (Max Packet Length − Min Packet Length) + 1e-3"
+  },
+  {
+   "rid": "CIC-161",
+   "code": "CIC-A-avgseg=mean[Fwd]",
+   "form": "|Avg Fwd Segment Size − Fwd Packet Length Mean| ≤ 1e-3 + 1e-6·|Fwd Packet Length Mean|"
+  },
+  {
+   "rid": "CIC-165",
+   "code": "CIC-A-avgseg=mean[Bwd]",
+   "form": "|Avg Bwd Segment Size − Bwd Packet Length Mean| ≤ 1e-3 + 1e-6·|Bwd Packet Length Mean|"
+  }
+ ]
+}

@@ -1,0 +1,43 @@
+LICENSING OVERVIEW (dual license)
+
+This repository is dual-licensed by component. The authors apply these licenses to
+the extent they hold the rights; see the conditions below.
+
+  CODE                  -> MIT (see LICENSE-MIT)
+    code/*.py  (the pipeline and the re-analysis / verification scripts)
+
+  DOCS, CONSTRAINT LISTS, EVIDENCE ARRAYS  -> CC BY 4.0 (see LICENSE-CC-BY-4.0)
+    README.md, REPRODUCIBILITY.md, evidence/README.md
+    protocol/*.json and code/register_extract.json  (constraint lists / register)
+    evidence/arrays/**  (confirmatory + corrected arm-B arrays)
+
+Why CC BY 4.0 for the non-code materials: the same confirmatory and corrected arm-B
+arrays are already deposited, irrevocably, under CC BY 4.0 on Zenodo (results record,
+DOI 10.5281/zenodo.24227377). This repository matches that verified deposit license so
+the same files are not offered under two different licenses. (The Zenodo record's license
+was verified from the record page: "Creative Commons Attribution 4.0 International".)
+
+NOT LICENSED HERE (under either license):
+  - The CIC-IDS2017 (Canadian Institute for Cybersecurity) and UNSW-NB15 (UNSW
+    Canberra) raw datasets — property of their providers, under their own terms;
+    not redistributed here.
+  - Any third-party libraries or components, which keep their own licenses.
+
+CONDITIONS / OPEN POINTS (read before publishing):
+  1. The evidence arrays are DERIVED from CIC-IDS2017 and UNSW-NB15. The authors are
+     responsible for ensuring those datasets' terms permit licensing/redistribution of
+     these derived arrays — as they already asserted by depositing them under CC BY 4.0 on
+     Zenodo. Excluding the raw data does not by itself settle derivative rights.
+  2. The prior Zenodo deposit (DOI 10.5281/zenodo.24227377, CC BY 4.0) stands on its own;
+     CC licenses are irrevocable, so this repository does not and cannot revoke or replace
+     it — it is aligned with it.
+  3. Publication is pending confirmation by all rights-holders (the authors named below).
+     The licensing choice recorded here was made by the submitting author; it does NOT by
+     itself evidence the approval of the other co-rights-holders. Do NOT publish this
+     repository publicly until that confirmation is given.
+
+Copyright (c) 2026 Hayder Mohsin Hammood, Shahinda Mohamed Elkholy,
+Haitham Abd El-Moneim El-Ghareeb.
+
+No approval by any supervisor or third party is asserted beyond the submitting author's
+own licensing choice recorded here.

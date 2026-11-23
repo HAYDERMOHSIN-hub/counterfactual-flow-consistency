@@ -1,0 +1,4 @@
+# Optional — needed ONLY to RE-GENERATE the R2.2 independent-generator (DiCE) audit
+# (code/exp_R2_2_dice.py). Not needed for any re-analysis in this repository.
+# Install after the core requirements:  pip install -r requirements.txt -r requirements-dice.txt
+dice-ml==0.12
