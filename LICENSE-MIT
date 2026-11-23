@@ -1,7 +1,7 @@
 MIT License
 
 Copyright (c) 2026 Hayder Mohsin Hammood, Shahinda Mohamed Elkholy,
-Haitham Abd El-Moneim El-Ghareeb
+Haitham A. El-Ghareeb
 
 This license covers the SOFTWARE in this repository: the executable code under
 `code/` (the pipeline and the re-analysis / verification scripts). It does NOT
