@@ -38,9 +38,26 @@ def load_model(ds, det):
 
 
 def conf_cases(ds, feats):
-    """Confirmatory test cases (seed-20261008 draw) at the saved indices; returns X0, c0, idx."""
-    idx = np.load(os.path.join(cfg.DATA, f'{ds}_conf_idx_20261008.npy'))
+    """Confirmatory test cases (seed-20261008 draw) at the saved indices; returns X0, c0, idx.
+
+    Requires data/{ds}_conf_idx_20261008.npy (the CONFIRMATORY draw). This is distinct from
+    data/{ds}_orig_idx.npy, which the training script writes for the EXPLORATORY/pilot draw and must
+    NOT be substituted here. If the confirmatory index is absent it can be reconstructed from the
+    deposited arrays with code/extract_conf_idx.py; we fail loudly rather than fall back to the pilot
+    draw or proceed silently."""
+    conf_path = os.path.join(cfg.DATA, f'{ds}_conf_idx_20261008.npy')
+    if not os.path.exists(conf_path):
+        raise SystemExit(
+            f'ERROR: confirmatory index not found: {conf_path}\n'
+            f'  Do NOT substitute data/{ds}_orig_idx.npy (that is the exploratory/pilot draw).\n'
+            f'  Reconstruct it from the deposited arrays:\n'
+            f'      python code/extract_conf_idx.py\n')
+    idx = np.load(conf_path)
     Xte, yte, cte, _, _ = load(ds, 'test')
+    if idx.size == 0 or idx.min() < 0 or idx.max() >= len(Xte):
+        raise SystemExit(
+            f'ERROR: confirmatory index out of bounds for {ds} test split '
+            f'(n_test={len(Xte)}, idx range [{int(idx.min())}, {int(idx.max())}]).')
     X0, c0 = Xte[idx], cte[idx]
     del Xte
     return X0, c0, idx

@@ -15,10 +15,14 @@ models/
 !evidence/**
 !evidence/arrays/**/*.npz
 
-# Generated re-analysis outputs (do not commit)
+# Generated re-analysis outputs (do not commit) — produced by the verify_/exp_ scripts at run time
+tables_3_5_verified.json
 R1_6_distance_verified.json
 R2_3_cic_daycluster_verified.json
+R2_1b_identity_sensitivity.json
+confirmatory_analysis_corrected.json
 out_*.json
+logs/
 
 # Python
 __pycache__/

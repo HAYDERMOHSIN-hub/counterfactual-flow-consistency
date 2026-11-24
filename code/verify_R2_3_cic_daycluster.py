@@ -15,6 +15,7 @@ Usage: python verify_R2_3_cic_daycluster.py <raw_arrays_dir> [out.json] [n_boot]
 """
 import sys, os, json
 import numpy as np
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import expcommon as E
 
 RAW = sys.argv[1] if len(sys.argv) > 1 else "evidence/arrays/confirmatory"

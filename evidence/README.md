@@ -4,11 +4,17 @@ This folder lets you RE-ANALYSE the array-based results directly, without retrai
 regenerating counterfactuals.
 
 ## Contents
-- `arrays/confirmatory/` — the 48 confirmatory per-instance arrays (seed 10; arms A_typed, A (raw),
-  B (initial full-list), C) for the six dataset×detector cells. These are the ORIGINAL confirmatory arrays.
-- `arrays/B_corrected/` — the 18 CORRECTED arm-B arrays (eligible-list enforcement re-run; manuscript
-  Section 3.5, deviation 1). The manuscript's arm-B distances come from these, not from
-  `arrays/confirmatory/*_B_*`.
+- `arrays/confirmatory/` — the **48 original** confirmatory per-instance arrays for the six
+  dataset×detector cells: **A_typed and the initial full-list B at generator seeds 10, 11 and 12**
+  (3 seeds × 2 arms × 6 cells = 36), plus **A (raw) and C at seed 10 only** (2 arms × 6 cells = 12).
+  These are the ORIGINAL confirmatory arrays.
+- `arrays/B_corrected/` — the **18 CORRECTED arm-B** arrays (eligible-list enforcement re-run;
+  manuscript Section 3.5, deviation 1): **six cells × three seeds (10, 11, 12)**. The manuscript's
+  arm-B distances come from these, not from `arrays/confirmatory/*_B_*`.
+
+Seeds (distinct roles, per the protocol): the data-preparation / split seed is **20261007**; the
+confirmatory-sample draw seed is **20261008**; the generator seeds are **10, 11 and 12** (seed 10 is
+primary; 11 and 12 report run-to-run ranges). The `seedNN` in each filename is the generator seed.
 - `SHA256SUMS.txt` — SHA-256 of every array here (bit-identical to the deposited originals; not
   recompressed or modified). Verify with `sha256sum -c SHA256SUMS.txt` from this folder.
 
@@ -47,7 +53,10 @@ python code/verify_R2_3_cic_daycluster.py
 # R1.5 — metric-definition check
 python code/verify_R1_5_metric_definition.py
 ```
-Expected (reproduced in a clean checkout): Tables 3–5 — e.g. CIC-RF A_typed M1/M2/M3 = 1.000/0.380/0.620,
-arm B 1.000/0.000/1.000, UNSW arm-C coverage 0.722; UNSW-HGB A-vs-B rank-biserial +0.18 (p = 0.0011);
-arm-B exactly-zero-distance count = 0 in every cell; CIC day-clustered CIs RF [0.196, 0.492],
-XGB [0.037, 0.139], HGB [0.072, 0.201]; R2.1 CIC-RF M2 0.380→0.034 (excl. identities); R1.5 "PASS".
+Expected (reproduced in a clean checkout): Tables 3–5 — e.g. CIC-RF A_typed M1/M2/M3/M4 =
+1.000/0.380/0.620/0.00504, arm B 1.000/0.000/1.000, UNSW arm-C coverage 0.722; Table 4 A_typed M2
+verdicts supported in five of six cells (UNSW-XGB not supported, 0.015, 95% CI [0.009, 0.025]);
+Table 5 F2 significant after Holm for CIC-RF and UNSW-HGB, F3 significant in all six cells; UNSW-HGB
+A-vs-B rank-biserial +0.177 (p = 0.00112897, Holm-adjusted 0.00564); arm-B exactly-zero-distance
+count = 0 in every cell; CIC day-clustered CIs RF [0.196, 0.492], XGB [0.037, 0.139],
+HGB [0.072, 0.201]; R2.1 CIC-RF M2 0.380→0.034 (excl. identities), all 18/18 combinations; R1.5 "PASS".

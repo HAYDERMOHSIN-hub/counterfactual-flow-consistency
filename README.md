@@ -40,16 +40,21 @@ created yet, so no release-asset link is given here.
 ## Quick start — re-analyse from a clean checkout
 ```bash
 pip install -r requirements.txt
-python code/verify_tables_3_5.py               # Tables 3-5 five-state counts + M1/M2/M3 per cell/arm
-python code/verify_R1_6_distance.py            # R1.6 distances, rank-biserial, zero-distance counts
+python code/verify_tables_3_5.py               # Tables 3-5: states, M1/M2/M3/M4, Wilson+5% verdict, Holm families
+python code/verify_R1_6_distance.py            # R1.6: distances, rank-biserial, zero-distance counts, Holm
 python code/exp_R2_1b_identity_sensitivity.py  # R2.1 identity-sensitivity (all 18 cell x seed)
 python code/verify_R2_3_cic_daycluster.py      # R2.3 CIC day-clustered bootstrap CIs
 python code/verify_R1_5_metric_definition.py   # R1.5 metric-definition check
 ```
-These read `evidence/arrays/` by default. Expected (reproduced in a clean checkout): Tables 3-5 e.g.
-CIC-RF A_typed 1.000/0.380/0.620 and arm B 1.000/0.000/1.000, UNSW arm-C coverage 0.722; UNSW-HGB A-vs-B
-rank-biserial +0.18 (p = 0.0011); arm-B zero-distance count 0 in every cell; CIC day-clustered CIs
-RF [0.196, 0.492], XGB [0.037, 0.139], HGB [0.072, 0.201]; R1.5 "PASS".
+These read `evidence/arrays/` by default and recompute from the arrays (never copied from the tables).
+`verify_tables_3_5.py` reproduces the full Tables 3-5: the five states and M1/M2/M3/M4 per cell and arm;
+Table 4 (A_typed M2 with the 95% Wilson interval and the 5% verdict); and Table 5 (families F1 McNemar,
+F2/F3 Wilcoxon, Holm-corrected within each family of six). Expected (reproduced in a clean checkout):
+CIC-RF A_typed M1/M2/M3/M4 = 1.000/0.380/0.620/0.00504 and arm B 1.000/0.000/1.000, UNSW arm-C coverage
+0.722; Table 4 supported in five of six cells (UNSW-XGB not supported, 0.015, CI [0.009, 0.025]);
+Table 5 F2 significant after Holm for CIC-RF and UNSW-HGB, F3 significant in all six cells; UNSW-HGB
+A-vs-B rank-biserial +0.177 (p = 0.00112897, Holm 0.00564); arm-B zero-distance count 0 in every cell;
+CIC day-clustered CIs RF [0.196, 0.492], XGB [0.037, 0.139], HGB [0.072, 0.201]; R2.1 all 18/18; R1.5 "PASS".
 
 ## Re-analyse vs re-generate vs re-train
 - **Re-analyse** (above): recompute from the saved arrays in `evidence/` — no models, no raw data.
@@ -93,9 +98,9 @@ datasets** (property of their providers, under their own terms) and any **third-
    permit licensing these derived arrays — as already asserted by depositing them under CC BY 4.0 on Zenodo.
 2. The prior Zenodo deposit (CC BY 4.0) is **irrevocable** and stands on its own; this repository is
    **aligned with it**, not overriding it.
-3. Publication is **pending confirmation by all rights-holders**. The licensing choice here was made by the
-   submitting author and does **not** by itself evidence the other co-rights-holders' approval. **Do not
-   publish this repository publicly until that confirmation is given.** No supervisor approval is asserted.
+3. **Publication approved:** the submitting author confirms that both supervisors have approved publication
+   of this repository. This approval concerns publication and the licensing choice above; it does **not** by
+   itself establish redistribution rights over third-party or dataset-derived materials (see points 1-2).
 
 ## Citation
 Please cite the paper (IJIES, manuscript 20267767) once its publication details are available, and the

@@ -20,7 +20,21 @@ from expcommon import metrics_from_array
 from generator import POP, GENS, ELITE
 
 RERUN = os.path.join(cfg.ROOT, 'experiments', 'repro', 'raw')
-REF = cfg.REF
+# Reference arrays live in the repository at evidence/arrays/{confirmatory,B_corrected}. Older
+# deposited layouts used reference/{original_48,corrected_B_18}; both are accepted. Override with
+# PAPER4_REF_CONF / PAPER4_REF_B if the arrays are elsewhere.
+def _first_existing(cands):
+    for c in cands:
+        if os.path.isdir(c):
+            return c
+    return cands[0]
+
+REF_CONF = os.environ.get('PAPER4_REF_CONF', _first_existing([
+    os.path.join(cfg.ROOT, 'evidence', 'arrays', 'confirmatory'),
+    os.path.join(cfg.REF, 'original_48')]))
+REF_B = os.environ.get('PAPER4_REF_B', _first_existing([
+    os.path.join(cfg.ROOT, 'evidence', 'arrays', 'B_corrected'),
+    os.path.join(cfg.REF, 'corrected_B_18')]))
 EXPECTED_Q = POP + GENS * (POP - ELITE)   # 60 + 40*30 = 1260
 DM = 0.005; AG = 0.99
 
@@ -30,8 +44,8 @@ CELLS = [(d, m) for d in cfg.DATASETS for m in cfg.DETECTORS]
 
 
 def ref_path(ds, det, arm, seed):
-    fold = 'corrected_B_18' if arm == 'B' else 'original_48'
-    return os.path.join(REF, fold, f'{ds}_{det}_{arm}_seed{seed}.npz')
+    base = REF_B if arm == 'B' else REF_CONF
+    return os.path.join(base, f'{ds}_{det}_{arm}_seed{seed}.npz')
 
 
 def dmetric(a, b):
@@ -43,6 +57,7 @@ def dmetric(a, b):
 
 
 rep = {'stage': 'reproduce_gate', 'criteria': {'dM': DM, 'flip_agreement': AG, 'expected_queries': EXPECTED_Q},
+       'reference_dirs': {'confirmatory': REF_CONF, 'corrected_B': REF_B}, 'rerun_dir': RERUN,
        'cells': {}, 'query_budget': [], 'all_pass': True, 'missing': []}
 
 for ds, det in CELLS:

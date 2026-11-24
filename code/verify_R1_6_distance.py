@@ -21,6 +21,21 @@ import sys, os, json, glob
 import numpy as np
 from scipy import stats
 
+
+def holm(pvals):
+    """Holm step-down adjusted p-values (monotone), m = number of cells in the family.
+    Matches the deposited confirmatory analysis routine."""
+    pvals = np.asarray(pvals, float)
+    m = len(pvals)
+    order = np.argsort(pvals)
+    adj = np.empty(m)
+    run = 0.0
+    for rank, idx in enumerate(order):
+        a = (m - rank) * pvals[idx]
+        run = max(run, a)
+        adj[idx] = min(run, 1.0)
+    return adj
+
 RAW = sys.argv[1] if len(sys.argv) > 1 else "evidence/arrays/confirmatory"
 # Arm B enforcement was re-run on the eligible list (manuscript Section 3.5, deviation 1); the
 # deposited analysis reads arm B from the corrected set. A_typed and C come from the confirmatory
@@ -96,6 +111,26 @@ for cell in CELLS:
         "B_converted_n": int(b_conv.sum()), "B_zero_distance_count": b_zero,
     }
 
+# ---- Holm correction within the paired families (m = 6 cells), matching the manuscript ---------
+# F2 family: M4 A_typed vs B (AvsB Wilcoxon). F3 family: M4 B vs C (BvsC Wilcoxon).
+# A cell with < 100 usable pairs would be treated as non-rejected (p=1) before Holm; here every
+# cell has 1000 (A-vs-B) or >=722 (B-vs-C) pairs, so none is inconclusive. The raw p-values are the
+# pre-Holm values the manuscript reports (e.g. UNSW-NB15/HGB rank-biserial +0.177, p = 0.00112...).
+ok_cells = [c for c in CELLS if "error" not in res[c]]
+for fam_key, fam_desc in [("AvsB_wilcoxon_p", "F2: M4 A_typed vs B"),
+                          ("BvsC_wilcoxon_p", "F3: M4 B vs C")]:
+    praw = [res[c][fam_key] for c in ok_cells]
+    padj = holm(praw)
+    for c, pa in zip(ok_cells, padj):
+        res[c][fam_key + "_holm"] = float(pa)
+        res[c][fam_key + "_sig_holm_0.05"] = bool(pa < 0.05)
+
 json.dump(res, open(OUT, "w"), indent=1)
 print(json.dumps(res, indent=1))
+print("\n=== Holm-corrected Wilcoxon p within each family (m=6) ===")
+for c in ok_cells:
+    print("  %-10s  A-vs-B: rb=%+0.3f p=%.6g p_holm=%.4g | B-vs-C: rb=%+0.3f p=%.3g p_holm=%.3g" % (
+        c, res[c]["AvsB_rank_biserial_B_minus_A"], res[c]["AvsB_wilcoxon_p"],
+        res[c]["AvsB_wilcoxon_p_holm"], res[c]["BvsC_rank_biserial_B_minus_C"],
+        res[c]["BvsC_wilcoxon_p"], res[c]["BvsC_wilcoxon_p_holm"]))
 print(f"\nwritten: {OUT}")

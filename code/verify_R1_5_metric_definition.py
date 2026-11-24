@@ -3,7 +3,7 @@
 so a converted, eligibly-violating, NOT-returned candidate enters s4 (M2 numerator). For arm C a
 no-match case is s1 (in N for M1/M3, excluded from the conversion-conditional M2 denominator)."""
 import sys, os, numpy as np
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', '..', '03_code', 'code'))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import expcommon as E
 el, cls2 = E.elig_sets('cic'); cid = sorted(cls2)[0]
 z = {'p_benign': np.array([0.9, 0.3, 0.8, 0.7]), 'returned': np.array([False, False, True, True]),
