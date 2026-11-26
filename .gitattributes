@@ -1,0 +1,3 @@
+# Store R1 review-evidence files verbatim (no line-ending conversion) so the
+# SHA-256 digests in review_evidence/R1/SHA256SUMS.txt verify on every platform.
+review_evidence/** -text
