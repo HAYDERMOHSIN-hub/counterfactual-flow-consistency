@@ -1,0 +1,11 @@
+{
+ "median_B_minus_A": 0.0,
+ "ci": [
+  0.0,
+  0.0
+ ],
+ "closerB": 207,
+ "fartherB": 244,
+ "equal": 549,
+ "wilcoxon_p": 0.0011289675176179067
+}

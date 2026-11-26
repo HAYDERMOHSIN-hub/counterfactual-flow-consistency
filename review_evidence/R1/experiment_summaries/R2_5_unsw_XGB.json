@@ -1,0 +1,85 @@
+{
+ "ds": "unsw",
+ "det": "XGB",
+ "n_ttl_constraints": 7,
+ "runs": {
+  "A_typed_seed10": {
+   "M1": 1.0,
+   "M2": 0.646,
+   "M3": 0.354,
+   "ttl_violations": 0,
+   "sttl_dttl_mismatch": 0,
+   "standard": {
+    "M1": 1.0,
+    "M2": 0.015,
+    "M3": 0.985,
+    "ttl_violations": 0
+   }
+  },
+  "B_seed10": {
+   "M1": 1.0,
+   "M2": 0.0,
+   "M3": 1.0,
+   "ttl_violations": 0,
+   "sttl_dttl_mismatch": 0,
+   "standard": {
+    "M1": 1.0,
+    "M2": 0.0,
+    "M3": 1.0,
+    "ttl_violations": 0
+   }
+  },
+  "A_typed_seed11": {
+   "M1": 1.0,
+   "M2": 0.655,
+   "M3": 0.345,
+   "ttl_violations": 1,
+   "sttl_dttl_mismatch": 0,
+   "standard": {
+    "M1": 1.0,
+    "M2": 0.016,
+    "M3": 0.984,
+    "ttl_violations": 0
+   }
+  },
+  "B_seed11": {
+   "M1": 1.0,
+   "M2": 0.0,
+   "M3": 1.0,
+   "ttl_violations": 2,
+   "sttl_dttl_mismatch": 0,
+   "standard": {
+    "M1": 1.0,
+    "M2": 0.0,
+    "M3": 1.0,
+    "ttl_violations": 0
+   }
+  },
+  "A_typed_seed12": {
+   "M1": 1.0,
+   "M2": 0.658,
+   "M3": 0.342,
+   "ttl_violations": 2,
+   "sttl_dttl_mismatch": 0,
+   "standard": {
+    "M1": 1.0,
+    "M2": 0.015,
+    "M3": 0.985,
+    "ttl_violations": 1
+   }
+  },
+  "B_seed12": {
+   "M1": 1.0,
+   "M2": 0.0,
+   "M3": 1.0,
+   "ttl_violations": 0,
+   "sttl_dttl_mismatch": 0,
+   "standard": {
+    "M1": 1.0,
+    "M2": 0.0,
+    "M3": 1.0,
+    "ttl_violations": 0
+   }
+  }
+ }
+}

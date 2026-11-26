@@ -1,0 +1,118 @@
+{
+ "R2_3_temporal": {
+  "holdout_frac": 0.3,
+  "n_cases": 978,
+  "perf": {
+   "RF": {
+    "recall": 0.992,
+    "fpr": 0.0227
+   },
+   "XGB": {
+    "recall": 0.986,
+    "fpr": 0.0208
+   },
+   "HGB": {
+    "recall": 0.988,
+    "fpr": 0.0214
+   }
+  },
+  "cells": {
+   "RF": {
+    "A_typed": {
+     "M1": 1.0,
+     "M2": 0.11554192229038855,
+     "M3": 0.884
+    },
+    "B": {
+     "M1": 1.0,
+     "M2": 0.0,
+     "M3": 1.0
+    },
+    "C": {
+     "M1": 0.762,
+     "M2": 0.0,
+     "M3": 0.762
+    }
+   },
+   "XGB": {
+    "A_typed": {
+     "M1": 1.0,
+     "M2": 0.041922290388548056,
+     "M3": 0.958
+    },
+    "B": {
+     "M1": 1.0,
+     "M2": 0.0,
+     "M3": 1.0
+    },
+    "C": {
+     "M1": 0.762,
+     "M2": 0.0,
+     "M3": 0.762
+    }
+   },
+   "HGB": {
+    "A_typed": {
+     "M1": 1.0,
+     "M2": 0.12269938650306748,
+     "M3": 0.877
+    },
+    "B": {
+     "M1": 1.0,
+     "M2": 0.0,
+     "M3": 1.0
+    },
+    "C": {
+     "M1": 0.762,
+     "M2": 0.0,
+     "M3": 0.762
+    }
+   }
+  }
+ },
+ "R2_3_cic_daycluster_bootstrap": {
+  "cic_RF": {
+   "M2": 0.38,
+   "n_days": 4,
+   "days": [
+    "Fri",
+    "Thu",
+    "Tue",
+    "Wed"
+   ],
+   "daycluster_ci": [
+    0.196,
+    0.492
+   ]
+  },
+  "cic_XGB": {
+   "M2": 0.093,
+   "n_days": 4,
+   "days": [
+    "Fri",
+    "Thu",
+    "Tue",
+    "Wed"
+   ],
+   "daycluster_ci": [
+    0.037,
+    0.139
+   ]
+  },
+  "cic_HGB": {
+   "M2": 0.147,
+   "n_days": 4,
+   "days": [
+    "Fri",
+    "Thu",
+    "Tue",
+    "Wed"
+   ],
+   "daycluster_ci": [
+    0.072,
+    0.201
+   ]
+  }
+ },
+ "_note": "UNSW-NB15 temporal split by capture start time (cut=1424237481, 2015-02-18); three fresh detectors trained on earlier 70%, generated for held-out period. CIC day-clustered bootstrap CIs for capture-dependence sensitivity (4-day coarse). Source: revision_tables.json keys R2_3, R2_3_cic_daycluster."
+}

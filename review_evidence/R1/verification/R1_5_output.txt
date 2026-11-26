@@ -1,0 +1,4 @@
+GENERATED arm: N=4  M1=0.75  M2=0.667 (s4=2)  M3=0.25
+  case1 (converted, class-2/3 violation, returned=False) counted in s4: True
+ARM C: M1=0.50 (s1 no-match=2 within N; excluded from M2 denom)
+PASS: definition matches the documented behaviour.

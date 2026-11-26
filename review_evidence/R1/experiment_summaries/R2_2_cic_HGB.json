@@ -1,0 +1,24 @@
+{
+ "ds": "cic",
+ "det": "HGB",
+ "N": 200,
+ "dice_version": "0.12",
+ "methods": {
+  "genetic": {
+   "returned": 1.0,
+   "M1": 1.0,
+   "M2": 0.145,
+   "M3": 0.855,
+   "n_errors": 0,
+   "M4_pct_med": 0.07996696691176472
+  },
+  "random": {
+   "returned": 0.0,
+   "M1": 0.0,
+   "M2": null,
+   "M3": 0.0,
+   "n_errors": 200,
+   "M4_pct_med": null
+  }
+ }
+}

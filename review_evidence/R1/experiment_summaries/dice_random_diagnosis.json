@@ -1,0 +1,291 @@
+{
+ "int32_max": 2147483647,
+ "precision_realvalued": 6,
+ "precision_integer": 0,
+ "datasets": {
+  "cic": {
+   "n_varied_continuous": 68,
+   "n_offenders": 25,
+   "offenders": [
+    {
+     "feature": "Flow Bytes/s",
+     "lo": -261000000.0,
+     "hi": 2071000000.0,
+     "precision": 6,
+     "scaled_bound": 2071000000000000.0,
+     "exceeds_int32_by_factor": 964384.5
+    },
+    {
+     "feature": "Flow IAT Mean",
+     "lo": -13.0,
+     "hi": 120000000.0,
+     "precision": 6,
+     "scaled_bound": 120000000000000.0,
+     "exceeds_int32_by_factor": 55879.4
+    },
+    {
+     "feature": "Fwd IAT Mean",
+     "lo": 0.0,
+     "hi": 120000000.0,
+     "precision": 6,
+     "scaled_bound": 120000000000000.0,
+     "exceeds_int32_by_factor": 55879.4
+    },
+    {
+     "feature": "Bwd IAT Mean",
+     "lo": 0.0,
+     "hi": 120000000.0,
+     "precision": 6,
+     "scaled_bound": 120000000000000.0,
+     "exceeds_int32_by_factor": 55879.4
+    },
+    {
+     "feature": "Idle Mean",
+     "lo": 0.0,
+     "hi": 120000000.0,
+     "precision": 6,
+     "scaled_bound": 120000000000000.0,
+     "exceeds_int32_by_factor": 55879.4
+    },
+    {
+     "feature": "Active Mean",
+     "lo": 0.0,
+     "hi": 110000000.0,
+     "precision": 6,
+     "scaled_bound": 110000000000000.0,
+     "exceeds_int32_by_factor": 51222.7
+    },
+    {
+     "feature": "Flow IAT Std",
+     "lo": 0.0,
+     "hi": 84800261.5664079,
+     "precision": 6,
+     "scaled_bound": 84800261566407.9,
+     "exceeds_int32_by_factor": 39488.2
+    },
+    {
+     "feature": "Fwd IAT Std",
+     "lo": 0.0,
+     "hi": 84602929.2769822,
+     "precision": 6,
+     "scaled_bound": 84602929276982.2,
+     "exceeds_int32_by_factor": 39396.3
+    },
+    {
+     "feature": "Bwd IAT Std",
+     "lo": 0.0,
+     "hi": 84418013.7826341,
+     "precision": 6,
+     "scaled_bound": 84418013782634.1,
+     "exceeds_int32_by_factor": 39310.2
+    },
+    {
+     "feature": "Idle Std",
+     "lo": 0.0,
+     "hi": 76900000.0,
+     "precision": 6,
+     "scaled_bound": 76900000000000.0,
+     "exceeds_int32_by_factor": 35809.4
+    },
+    {
+     "feature": "Active Std",
+     "lo": 0.0,
+     "hi": 70000000.0,
+     "precision": 6,
+     "scaled_bound": 70000000000000.0,
+     "exceeds_int32_by_factor": 32596.3
+    },
+    {
+     "feature": "Packet Length Variance",
+     "lo": 0.0,
+     "hi": 22400000.0,
+     "precision": 6,
+     "scaled_bound": 22400000000000.0,
+     "exceeds_int32_by_factor": 10430.8
+    },
+    {
+     "feature": "Flow Packets/s",
+     "lo": -2000000.0,
+     "hi": 3000000.0,
+     "precision": 6,
+     "scaled_bound": 3000000000000.0,
+     "exceeds_int32_by_factor": 1397.0
+    },
+    {
+     "feature": "Fwd Packets/s",
+     "lo": 0.0,
+     "hi": 3000000.0,
+     "precision": 6,
+     "scaled_bound": 3000000000000.0,
+     "exceeds_int32_by_factor": 1397.0
+    },
+    {
+     "feature": "Bwd Packets/s",
+     "lo": 0.0,
+     "hi": 2000000.0,
+     "precision": 6,
+     "scaled_bound": 2000000000000.0,
+     "exceeds_int32_by_factor": 931.3
+    },
+    {
+     "feature": "Fwd Header Length",
+     "lo": -9663668122.0,
+     "hi": 4617240.0,
+     "precision": 0,
+     "scaled_bound": 9663668122.0,
+     "exceeds_int32_by_factor": 4.5
+    },
+    {
+     "feature": "Bwd Packet Length Std",
+     "lo": 0.0,
+     "hi": 8194.660487,
+     "precision": 6,
+     "scaled_bound": 8194660486.999999,
+     "exceeds_int32_by_factor": 3.8
+    },
+    {
+     "feature": "Fwd Packet Length Std",
+     "lo": 0.0,
+     "hi": 7125.5968458437,
+     "precision": 6,
+     "scaled_bound": 7125596845.8437,
+     "exceeds_int32_by_factor": 3.3
+    },
+    {
+     "feature": "Fwd Packet Length Mean",
+     "lo": 0.0,
+     "hi": 5940.857143,
+     "precision": 6,
+     "scaled_bound": 5940857143.0,
+     "exceeds_int32_by_factor": 2.8
+    },
+    {
+     "feature": "Avg Fwd Segment Size",
+     "lo": 0.0,
+     "hi": 5940.857143,
+     "precision": 6,
+     "scaled_bound": 5940857143.0,
+     "exceeds_int32_by_factor": 2.8
+    },
+    {
+     "feature": "Bwd Packet Length Mean",
+     "lo": 0.0,
+     "hi": 5800.5,
+     "precision": 6,
+     "scaled_bound": 5800500000.0,
+     "exceeds_int32_by_factor": 2.7
+    },
+    {
+     "feature": "Avg Bwd Segment Size",
+     "lo": 0.0,
+     "hi": 5800.5,
+     "precision": 6,
+     "scaled_bound": 5800500000.0,
+     "exceeds_int32_by_factor": 2.7
+    },
+    {
+     "feature": "Packet Length Std",
+     "lo": 0.0,
+     "hi": 4731.522394,
+     "precision": 6,
+     "scaled_bound": 4731522394.0,
+     "exceeds_int32_by_factor": 2.2
+    },
+    {
+     "feature": "Average Packet Size",
+     "lo": 0.0,
+     "hi": 3337.142857,
+     "precision": 6,
+     "scaled_bound": 3337142857.0,
+     "exceeds_int32_by_factor": 1.6
+    },
+    {
+     "feature": "Packet Length Mean",
+     "lo": 0.0,
+     "hi": 2920.0,
+     "precision": 6,
+     "scaled_bound": 2920000000.0,
+     "exceeds_int32_by_factor": 1.4
+    }
+   ]
+  },
+  "unsw": {
+   "n_varied_continuous": 37,
+   "n_offenders": 9,
+   "offenders": [
+    {
+     "feature": "Sload",
+     "lo": 0.0,
+     "hi": 5640000000.0,
+     "precision": 6,
+     "scaled_bound": 5640000000000000.0,
+     "exceeds_int32_by_factor": 2626329.7
+    },
+    {
+     "feature": "Dload",
+     "lo": 0.0,
+     "hi": 128761904.0,
+     "precision": 6,
+     "scaled_bound": 128761904000000.0,
+     "exceeds_int32_by_factor": 59959.4
+    },
+    {
+     "feature": "Sjit",
+     "lo": 0.0,
+     "hi": 1483830.917,
+     "precision": 6,
+     "scaled_bound": 1483830917000.0,
+     "exceeds_int32_by_factor": 691.0
+    },
+    {
+     "feature": "Djit",
+     "lo": 0.0,
+     "hi": 781221.1183,
+     "precision": 6,
+     "scaled_bound": 781221118300.0,
+     "exceeds_int32_by_factor": 363.8
+    },
+    {
+     "feature": "Sintpkt",
+     "lo": 0.0,
+     "hi": 84371.496,
+     "precision": 6,
+     "scaled_bound": 84371496000.0,
+     "exceeds_int32_by_factor": 39.3
+    },
+    {
+     "feature": "Dintpkt",
+     "lo": 0.0,
+     "hi": 57739.24,
+     "precision": 6,
+     "scaled_bound": 57739240000.0,
+     "exceeds_int32_by_factor": 26.9
+    },
+    {
+     "feature": "dur",
+     "lo": 0.0,
+     "hi": 8786.637695,
+     "precision": 6,
+     "scaled_bound": 8786637695.0,
+     "exceeds_int32_by_factor": 4.1
+    },
+    {
+     "feature": "stcpb",
+     "lo": 0.0,
+     "hi": 4294958913.0,
+     "precision": 0,
+     "scaled_bound": 4294958913.0,
+     "exceeds_int32_by_factor": 2.0
+    },
+    {
+     "feature": "dtcpb",
+     "lo": 0.0,
+     "hi": 4294953724.0,
+     "precision": 0,
+     "scaled_bound": 4294953724.0,
+     "exceeds_int32_by_factor": 2.0
+    }
+   ]
+  }
+ }
+}

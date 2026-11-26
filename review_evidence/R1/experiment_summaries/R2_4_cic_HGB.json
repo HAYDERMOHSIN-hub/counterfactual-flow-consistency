@@ -1,0 +1,355 @@
+{
+ "ds": "cic",
+ "det": "HGB",
+ "full_donor_pool": 200000,
+ "sizes": {
+  "25000": {
+   "elig_benign_pool": 24942,
+   "coverage": 1.0,
+   "M1": 1.0,
+   "M3": 1.0,
+   "M4_pct_med": 0.03695375000000001,
+   "M5_gower_med": 0.007917040086672426,
+   "by_class": {
+    "Bot": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.04125316176470589,
+     "M5_gower_med": 0.0007949728729734714,
+     "matched_pool_med": 24942
+    },
+    "DDoS": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.08049591911764706,
+     "M5_gower_med": 0.03411112910133288,
+     "matched_pool_med": 24942
+    },
+    "DoS GoldenEye": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.04091941176470587,
+     "M5_gower_med": 0.031189467225658348,
+     "matched_pool_med": 24942
+    },
+    "DoS Hulk": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.08375518382352942,
+     "M5_gower_med": 0.07554104138464238,
+     "matched_pool_med": 24942
+    },
+    "DoS Slowhttptest": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.00026455882352941423,
+     "M5_gower_med": 6.508275452087258e-05,
+     "matched_pool_med": 24942
+    },
+    "DoS slowloris": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.075414375,
+     "M5_gower_med": 0.06637842740824444,
+     "matched_pool_med": 24942
+    },
+    "FTP-Patator": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07138455882352941,
+     "M5_gower_med": 0.007846675362611882,
+     "matched_pool_med": 24942
+    },
+    "PortScan": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.037602426470588236,
+     "M5_gower_med": 0.029809593963431746,
+     "matched_pool_med": 24942
+    },
+    "SSH-Patator": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.03649500000000001,
+     "M5_gower_med": 0.007350093286361182,
+     "matched_pool_med": 24942
+    },
+    "Web Attack - Brute Force": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.001097169117647059,
+     "M5_gower_med": 3.6665000682157336e-05,
+     "matched_pool_med": 24942
+    },
+    "Web Attack - XSS": {
+     "n": 90,
+     "coverage": 1.0,
+     "M4_pct_med": 0.001090551470588237,
+     "M5_gower_med": 5.550327584660833e-05,
+     "matched_pool_med": 24942
+    }
+   }
+  },
+  "50000": {
+   "elig_benign_pool": 49906,
+   "coverage": 1.0,
+   "M1": 1.0,
+   "M3": 1.0,
+   "M4_pct_med": 0.03369299632352941,
+   "M5_gower_med": 0.007351858378235845,
+   "by_class": {
+    "Bot": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.04003746323529412,
+     "M5_gower_med": 0.0011851357958710626,
+     "matched_pool_med": 49906
+    },
+    "DDoS": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07919253676470588,
+     "M5_gower_med": 0.02440864494697536,
+     "matched_pool_med": 49906
+    },
+    "DoS GoldenEye": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.0375195955882353,
+     "M5_gower_med": 0.027624601815296773,
+     "matched_pool_med": 49906
+    },
+    "DoS Hulk": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.0804166911764706,
+     "M5_gower_med": 0.07121340926666177,
+     "matched_pool_med": 49906
+    },
+    "DoS Slowhttptest": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.00026455882352941423,
+     "M5_gower_med": 6.508275452087258e-05,
+     "matched_pool_med": 49906
+    },
+    "DoS slowloris": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07064988970588236,
+     "M5_gower_med": 0.05227764050631675,
+     "matched_pool_med": 49906
+    },
+    "FTP-Patator": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.05300408088235294,
+     "M5_gower_med": 0.006388836398020408,
+     "matched_pool_med": 49906
+    },
+    "PortScan": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.03625680147058824,
+     "M5_gower_med": 0.029816450773152987,
+     "matched_pool_med": 49906
+    },
+    "SSH-Patator": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.033332316176470575,
+     "M5_gower_med": 0.007391459339774714,
+     "matched_pool_med": 49906
+    },
+    "Web Attack - Brute Force": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.0010236029411764681,
+     "M5_gower_med": 2.9132920725350215e-05,
+     "matched_pool_med": 49906
+    },
+    "Web Attack - XSS": {
+     "n": 90,
+     "coverage": 1.0,
+     "M4_pct_med": 0.0009906250000000008,
+     "M5_gower_med": 2.6612472939749028e-05,
+     "matched_pool_med": 49906
+    }
+   }
+  },
+  "100000": {
+   "elig_benign_pool": 99840,
+   "coverage": 1.0,
+   "M1": 1.0,
+   "M3": 1.0,
+   "M4_pct_med": 0.031471746323529406,
+   "M5_gower_med": 0.0074417440399852045,
+   "by_class": {
+    "Bot": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.029371838235294108,
+     "M5_gower_med": 0.0004374053861462316,
+     "matched_pool_med": 99840
+    },
+    "DDoS": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07917374999999999,
+     "M5_gower_med": 0.02440864494697536,
+     "matched_pool_med": 99840
+    },
+    "DoS GoldenEye": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.03478036764705882,
+     "M5_gower_med": 0.029439079644283776,
+     "matched_pool_med": 99840
+    },
+    "DoS Hulk": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07794367647058822,
+     "M5_gower_med": 0.07430578156574266,
+     "matched_pool_med": 99840
+    },
+    "DoS Slowhttptest": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.00018797794117647614,
+     "M5_gower_med": 5.4301804307304834e-05,
+     "matched_pool_med": 99840
+    },
+    "DoS slowloris": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07060643382352941,
+     "M5_gower_med": 0.04677584202518524,
+     "matched_pool_med": 99840
+    },
+    "FTP-Patator": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.05300408088235294,
+     "M5_gower_med": 0.006388836398020408,
+     "matched_pool_med": 99840
+    },
+    "PortScan": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.031450220588235295,
+     "M5_gower_med": 0.03327552581087486,
+     "matched_pool_med": 99840
+    },
+    "SSH-Patator": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.03160922794117647,
+     "M5_gower_med": 0.008090312565331667,
+     "matched_pool_med": 99840
+    },
+    "Web Attack - Brute Force": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.0009882352941176472,
+     "M5_gower_med": 3.214213570368568e-05,
+     "matched_pool_med": 99840
+    },
+    "Web Attack - XSS": {
+     "n": 90,
+     "coverage": 1.0,
+     "M4_pct_med": 0.000982389705882354,
+     "M5_gower_med": 2.4794808582105216e-05,
+     "matched_pool_med": 99840
+    }
+   }
+  },
+  "200000": {
+   "elig_benign_pool": 199662,
+   "coverage": 1.0,
+   "M1": 1.0,
+   "M3": 1.0,
+   "M4_pct_med": 0.03133371323529412,
+   "M5_gower_med": 0.007356988734342256,
+   "by_class": {
+    "Bot": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.029371838235294108,
+     "M5_gower_med": 0.00043835859229720143,
+     "matched_pool_med": 199662
+    },
+    "DDoS": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07692779411764705,
+     "M5_gower_med": 0.023368660856657387,
+     "matched_pool_med": 199662
+    },
+    "DoS GoldenEye": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.034715808823529405,
+     "M5_gower_med": 0.026207753988195276,
+     "matched_pool_med": 199662
+    },
+    "DoS Hulk": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07712000000000001,
+     "M5_gower_med": 0.07322443642129904,
+     "matched_pool_med": 199662
+    },
+    "DoS Slowhttptest": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.00015724264705882363,
+     "M5_gower_med": 4.768551301253949e-05,
+     "matched_pool_med": 199662
+    },
+    "DoS slowloris": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.07060643382352941,
+     "M5_gower_med": 0.04677584202518524,
+     "matched_pool_med": 199662
+    },
+    "FTP-Patator": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.05300408088235294,
+     "M5_gower_med": 0.006388836398020408,
+     "matched_pool_med": 199662
+    },
+    "PortScan": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.030273676470588234,
+     "M5_gower_med": 0.02955633640175337,
+     "matched_pool_med": 199662
+    },
+    "SSH-Patator": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.03155893382352941,
+     "M5_gower_med": 0.00799574923910451,
+     "matched_pool_med": 199662
+    },
+    "Web Attack - Brute Force": {
+     "n": 91,
+     "coverage": 1.0,
+     "M4_pct_med": 0.0008623161764705912,
+     "M5_gower_med": 2.3001529127015476e-05,
+     "matched_pool_med": 199662
+    },
+    "Web Attack - XSS": {
+     "n": 90,
+     "coverage": 1.0,
+     "M4_pct_med": 0.0008517830882352926,
+     "M5_gower_med": 2.0462581087968218e-05,
+     "matched_pool_med": 199662
+    }
+   }
+  }
+ }
+}

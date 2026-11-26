@@ -1,0 +1,271 @@
+{
+ "ds": "unsw",
+ "det": "RF",
+ "full_donor_pool": 200000,
+ "sizes": {
+  "25000": {
+   "elig_benign_pool": 24696,
+   "coverage": 0.722,
+   "M1": 0.722,
+   "M3": 0.722,
+   "M4_pct_med": 0.04577094512195121,
+   "M5_gower_med": 0.022166492323555685,
+   "by_class": {
+    "Analysis": {
+     "n": 125,
+     "coverage": 0.208,
+     "M4_pct_med": 0.039097987804878054,
+     "M5_gower_med": 0.018309325275441483,
+     "matched_pool_med": 0
+    },
+    "Backdoor": {
+     "n": 125,
+     "coverage": 0.216,
+     "M4_pct_med": 0.06736048780487806,
+     "M5_gower_med": 0.03062574496287869,
+     "matched_pool_med": 0
+    },
+    "DoS": {
+     "n": 125,
+     "coverage": 0.648,
+     "M4_pct_med": 0.06742658536585365,
+     "M5_gower_med": 0.029773476405597417,
+     "matched_pool_med": 2293
+    },
+    "Exploits": {
+     "n": 125,
+     "coverage": 0.896,
+     "M4_pct_med": 0.06558228658536584,
+     "M5_gower_med": 0.02832848573806797,
+     "matched_pool_med": 2293
+    },
+    "Fuzzers": {
+     "n": 125,
+     "coverage": 0.92,
+     "M4_pct_med": 0.0388665243902439,
+     "M5_gower_med": 0.018924951219790792,
+     "matched_pool_med": 11742
+    },
+    "Generic": {
+     "n": 125,
+     "coverage": 0.96,
+     "M4_pct_med": 0.03556256097560975,
+     "M5_gower_med": 0.03689399402850898,
+     "matched_pool_med": 4590
+    },
+    "Reconnaissance": {
+     "n": 125,
+     "coverage": 0.928,
+     "M4_pct_med": 0.0377469512195122,
+     "M5_gower_med": 0.013336869851717146,
+     "matched_pool_med": 11742
+    },
+    "Shellcode": {
+     "n": 125,
+     "coverage": 1.0,
+     "M4_pct_med": 0.05082085365853658,
+     "M5_gower_med": 0.010892582807526372,
+     "matched_pool_med": 11742
+    }
+   }
+  },
+  "50000": {
+   "elig_benign_pool": 49418,
+   "coverage": 0.722,
+   "M1": 0.722,
+   "M3": 0.722,
+   "M4_pct_med": 0.04257786585365853,
+   "M5_gower_med": 0.019751158982342046,
+   "by_class": {
+    "Analysis": {
+     "n": 125,
+     "coverage": 0.208,
+     "M4_pct_med": 0.03476109756097561,
+     "M5_gower_med": 0.015889052860150403,
+     "matched_pool_med": 0
+    },
+    "Backdoor": {
+     "n": 125,
+     "coverage": 0.216,
+     "M4_pct_med": 0.06736048780487806,
+     "M5_gower_med": 0.02921889642770888,
+     "matched_pool_med": 0
+    },
+    "DoS": {
+     "n": 125,
+     "coverage": 0.648,
+     "M4_pct_med": 0.06410006097560976,
+     "M5_gower_med": 0.02735221392150901,
+     "matched_pool_med": 4638
+    },
+    "Exploits": {
+     "n": 125,
+     "coverage": 0.896,
+     "M4_pct_med": 0.06333692073170732,
+     "M5_gower_med": 0.02594234538677185,
+     "matched_pool_med": 4638
+    },
+    "Fuzzers": {
+     "n": 125,
+     "coverage": 0.92,
+     "M4_pct_med": 0.036481585365853664,
+     "M5_gower_med": 0.017345464567500277,
+     "matched_pool_med": 23372
+    },
+    "Generic": {
+     "n": 125,
+     "coverage": 0.96,
+     "M4_pct_med": 0.035407195121951215,
+     "M5_gower_med": 0.03358697557983713,
+     "matched_pool_med": 9131
+    },
+    "Reconnaissance": {
+     "n": 125,
+     "coverage": 0.928,
+     "M4_pct_med": 0.03697914634146342,
+     "M5_gower_med": 0.012534148665699825,
+     "matched_pool_med": 23372
+    },
+    "Shellcode": {
+     "n": 125,
+     "coverage": 1.0,
+     "M4_pct_med": 0.04775176829268292,
+     "M5_gower_med": 0.01011395029049094,
+     "matched_pool_med": 23372
+    }
+   }
+  },
+  "100000": {
+   "elig_benign_pool": 98850,
+   "coverage": 0.722,
+   "M1": 0.722,
+   "M3": 0.722,
+   "M4_pct_med": 0.037452286585365854,
+   "M5_gower_med": 0.022970522465533556,
+   "by_class": {
+    "Analysis": {
+     "n": 125,
+     "coverage": 0.208,
+     "M4_pct_med": 0.031107591463414633,
+     "M5_gower_med": 0.014534494274766881,
+     "matched_pool_med": 0
+    },
+    "Backdoor": {
+     "n": 125,
+     "coverage": 0.216,
+     "M4_pct_med": 0.06545298780487804,
+     "M5_gower_med": 0.027733746896221788,
+     "matched_pool_med": 0
+    },
+    "DoS": {
+     "n": 125,
+     "coverage": 0.648,
+     "M4_pct_med": 0.05212975609756097,
+     "M5_gower_med": 0.022975553276553547,
+     "matched_pool_med": 9376
+    },
+    "Exploits": {
+     "n": 125,
+     "coverage": 0.896,
+     "M4_pct_med": 0.05962658536585366,
+     "M5_gower_med": 0.025940050918550648,
+     "matched_pool_med": 9444
+    },
+    "Fuzzers": {
+     "n": 125,
+     "coverage": 0.92,
+     "M4_pct_med": 0.029529024390243915,
+     "M5_gower_med": 0.014134045067713433,
+     "matched_pool_med": 46663
+    },
+    "Generic": {
+     "n": 125,
+     "coverage": 0.96,
+     "M4_pct_med": 0.03532573170731707,
+     "M5_gower_med": 0.03358697557983713,
+     "matched_pool_med": 18198
+    },
+    "Reconnaissance": {
+     "n": 125,
+     "coverage": 0.928,
+     "M4_pct_med": 0.03436728658536585,
+     "M5_gower_med": 0.015142649971407456,
+     "matched_pool_med": 46663
+    },
+    "Shellcode": {
+     "n": 125,
+     "coverage": 1.0,
+     "M4_pct_med": 0.03783603658536585,
+     "M5_gower_med": 0.014726928702285468,
+     "matched_pool_med": 46663
+    }
+   }
+  },
+  "200000": {
+   "elig_benign_pool": 197726,
+   "coverage": 0.722,
+   "M1": 0.722,
+   "M3": 0.722,
+   "M4_pct_med": 0.035722225609756096,
+   "M5_gower_med": 0.02293289307382784,
+   "by_class": {
+    "Analysis": {
+     "n": 125,
+     "coverage": 0.208,
+     "M4_pct_med": 0.027942987804878056,
+     "M5_gower_med": 0.01101074725299202,
+     "matched_pool_med": 0
+    },
+    "Backdoor": {
+     "n": 125,
+     "coverage": 0.216,
+     "M4_pct_med": 0.0639419512195122,
+     "M5_gower_med": 0.02921889642770888,
+     "matched_pool_med": 0
+    },
+    "DoS": {
+     "n": 125,
+     "coverage": 0.648,
+     "M4_pct_med": 0.0505405487804878,
+     "M5_gower_med": 0.023031957016074186,
+     "matched_pool_med": 18802
+    },
+    "Exploits": {
+     "n": 125,
+     "coverage": 0.896,
+     "M4_pct_med": 0.05739463414634147,
+     "M5_gower_med": 0.025865259985416,
+     "matched_pool_med": 18908
+    },
+    "Fuzzers": {
+     "n": 125,
+     "coverage": 0.92,
+     "M4_pct_med": 0.027356463414634147,
+     "M5_gower_med": 0.012444274565398535,
+     "matched_pool_med": 93217
+    },
+    "Generic": {
+     "n": 125,
+     "coverage": 0.96,
+     "M4_pct_med": 0.0352025,
+     "M5_gower_med": 0.03237975920495892,
+     "matched_pool_med": 36202
+    },
+    "Reconnaissance": {
+     "n": 125,
+     "coverage": 0.928,
+     "M4_pct_med": 0.028824817073170732,
+     "M5_gower_med": 0.010636764944969752,
+     "matched_pool_med": 93217
+    },
+    "Shellcode": {
+     "n": 125,
+     "coverage": 1.0,
+     "M4_pct_med": 0.035132439024390234,
+     "M5_gower_med": 0.016881462932951806,
+     "matched_pool_med": 93217
+    }
+   }
+  }
+ }
+}

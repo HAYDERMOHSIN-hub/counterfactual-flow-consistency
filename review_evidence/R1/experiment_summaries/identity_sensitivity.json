@@ -1,0 +1,536 @@
+{
+ "arm": "A_typed",
+ "seeds": [
+  10,
+  11,
+  12
+ ],
+ "excluded_identities": {
+  "cic": [
+   "CIC-A-avgseg=mean[Fwd]",
+   "CIC-A-avgseg=mean[Bwd]"
+  ],
+  "unsw": [
+   "UNSW-A-smeansz",
+   "UNSW-A-dmeansz"
+  ]
+ },
+ "cells": {
+  "cic_RF": {
+   "10": {
+    "full": {
+     "M2": 0.38,
+     "s4": 380,
+     "denominator": 1000,
+     "wilson95": [
+      0.35042877333574113,
+      0.41048968232499267
+     ],
+     "M1": 1.0,
+     "M3": 0.62
+    },
+    "excl_identities": {
+     "M2": 0.034,
+     "s4": 34,
+     "denominator": 1000,
+     "wilson95": [
+      0.024431201022401962,
+      0.047135468460114016
+     ],
+     "M1": 1.0,
+     "M3": 0.966
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   },
+   "11": {
+    "full": {
+     "M2": 0.364,
+     "s4": 364,
+     "denominator": 1000,
+     "wilson95": [
+      0.3347511248747743,
+      0.39428979154072397
+     ],
+     "M1": 1.0,
+     "M3": 0.636
+    },
+    "excl_identities": {
+     "M2": 0.031,
+     "s4": 31,
+     "denominator": 1000,
+     "wilson95": [
+      0.02192386473850233,
+      0.04366576613553199
+     ],
+     "M1": 1.0,
+     "M3": 0.969
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   },
+   "12": {
+    "full": {
+     "M2": 0.37,
+     "s4": 370,
+     "denominator": 1000,
+     "wilson95": [
+      0.34062614660286095,
+      0.4003688470296006
+     ],
+     "M1": 1.0,
+     "M3": 0.63
+    },
+    "excl_identities": {
+     "M2": 0.034,
+     "s4": 34,
+     "denominator": 1000,
+     "wilson95": [
+      0.024431201022401962,
+      0.047135468460114016
+     ],
+     "M1": 1.0,
+     "M3": 0.966
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   }
+  },
+  "cic_XGB": {
+   "10": {
+    "full": {
+     "M2": 0.093,
+     "s4": 93,
+     "denominator": 1000,
+     "wilson95": [
+      0.07652345008781693,
+      0.11259164536150498
+     ],
+     "M1": 1.0,
+     "M3": 0.907
+    },
+    "excl_identities": {
+     "M2": 0.003,
+     "s4": 3,
+     "denominator": 1000,
+     "wilson95": [
+      0.0010207654054443251,
+      0.008783171789427854
+     ],
+     "M1": 1.0,
+     "M3": 0.997
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   },
+   "11": {
+    "full": {
+     "M2": 0.101,
+     "s4": 101,
+     "denominator": 1000,
+     "wilson95": [
+      0.08382372191011535,
+      0.12123014316182433
+     ],
+     "M1": 1.0,
+     "M3": 0.899
+    },
+    "excl_identities": {
+     "M2": 0.004,
+     "s4": 4,
+     "denominator": 1000,
+     "wilson95": [
+      0.0015565629678934289,
+      0.010239720429805971
+     ],
+     "M1": 1.0,
+     "M3": 0.996
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   },
+   "12": {
+    "full": {
+     "M2": 0.101,
+     "s4": 101,
+     "denominator": 1000,
+     "wilson95": [
+      0.08382372191011535,
+      0.12123014316182433
+     ],
+     "M1": 1.0,
+     "M3": 0.899
+    },
+    "excl_identities": {
+     "M2": 0.002,
+     "s4": 2,
+     "denominator": 1000,
+     "wilson95": [
+      0.000548632102457155,
+      0.007262958889587807
+     ],
+     "M1": 1.0,
+     "M3": 0.998
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   }
+  },
+  "cic_HGB": {
+   "10": {
+    "full": {
+     "M2": 0.147,
+     "s4": 147,
+     "denominator": 1000,
+     "wilson95": [
+      0.12640360474203108,
+      0.17029818565996066
+     ],
+     "M1": 1.0,
+     "M3": 0.853
+    },
+    "excl_identities": {
+     "M2": 0.0,
+     "s4": 0,
+     "denominator": 1000,
+     "wilson95": [
+      0.0,
+      0.003826898586390522
+     ],
+     "M1": 1.0,
+     "M3": 1.0
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   },
+   "11": {
+    "full": {
+     "M2": 0.145,
+     "s4": 145,
+     "denominator": 1000,
+     "wilson95": [
+      0.12453458493047025,
+      0.16818251306586704
+     ],
+     "M1": 1.0,
+     "M3": 0.855
+    },
+    "excl_identities": {
+     "M2": 0.001,
+     "s4": 1,
+     "denominator": 1000,
+     "wilson95": [
+      0.00017654182905727116,
+      0.0056427029601604705
+     ],
+     "M1": 1.0,
+     "M3": 0.999
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   },
+   "12": {
+    "full": {
+     "M2": 0.143,
+     "s4": 143,
+     "denominator": 1000,
+     "wilson95": [
+      0.12266696873653778,
+      0.16606543685414507
+     ],
+     "M1": 1.0,
+     "M3": 0.857
+    },
+    "excl_identities": {
+     "M2": 0.002,
+     "s4": 2,
+     "denominator": 1000,
+     "wilson95": [
+      0.000548632102457155,
+      0.007262958889587807
+     ],
+     "M1": 1.0,
+     "M3": 0.998
+    },
+    "excluded_present": [
+     "CIC-A-avgseg=mean[Fwd]",
+     "CIC-A-avgseg=mean[Bwd]"
+    ]
+   }
+  },
+  "unsw_RF": {
+   "10": {
+    "full": {
+     "M2": 0.158,
+     "s4": 158,
+     "denominator": 1000,
+     "wilson95": [
+      0.13670728972116591,
+      0.18191030891192525
+     ],
+     "M1": 1.0,
+     "M3": 0.842
+    },
+    "excl_identities": {
+     "M2": 0.093,
+     "s4": 93,
+     "denominator": 1000,
+     "wilson95": [
+      0.07652345008781693,
+      0.11259164536150498
+     ],
+     "M1": 1.0,
+     "M3": 0.907
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   },
+   "11": {
+    "full": {
+     "M2": 0.147,
+     "s4": 147,
+     "denominator": 1000,
+     "wilson95": [
+      0.12640360474203108,
+      0.17029818565996066
+     ],
+     "M1": 1.0,
+     "M3": 0.853
+    },
+    "excl_identities": {
+     "M2": 0.085,
+     "s4": 85,
+     "denominator": 1000,
+     "wilson95": [
+      0.06926305688204971,
+      0.10391326894465445
+     ],
+     "M1": 1.0,
+     "M3": 0.915
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   },
+   "12": {
+    "full": {
+     "M2": 0.141,
+     "s4": 141,
+     "denominator": 1000,
+     "wilson95": [
+      0.1208007805062944,
+      0.16394693267873398
+     ],
+     "M1": 1.0,
+     "M3": 0.859
+    },
+    "excl_identities": {
+     "M2": 0.078,
+     "s4": 78,
+     "denominator": 1000,
+     "wilson95": [
+      0.06294691874223309,
+      0.09628298366468054
+     ],
+     "M1": 1.0,
+     "M3": 0.922
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   }
+  },
+  "unsw_XGB": {
+   "10": {
+    "full": {
+     "M2": 0.015,
+     "s4": 15,
+     "denominator": 1000,
+     "wilson95": [
+      0.00911089683719635,
+      0.02460119479160246
+     ],
+     "M1": 1.0,
+     "M3": 0.985
+    },
+    "excl_identities": {
+     "M2": 0.013,
+     "s4": 13,
+     "denominator": 1000,
+     "wilson95": [
+      0.007612747122129775,
+      0.022114652101014598
+     ],
+     "M1": 1.0,
+     "M3": 0.987
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   },
+   "11": {
+    "full": {
+     "M2": 0.016,
+     "s4": 16,
+     "denominator": 1000,
+     "wilson95": [
+      0.009872155867426248,
+      0.025832281964199785
+     ],
+     "M1": 1.0,
+     "M3": 0.984
+    },
+    "excl_identities": {
+     "M2": 0.013,
+     "s4": 13,
+     "denominator": 1000,
+     "wilson95": [
+      0.007612747122129775,
+      0.022114652101014598
+     ],
+     "M1": 1.0,
+     "M3": 0.987
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   },
+   "12": {
+    "full": {
+     "M2": 0.015,
+     "s4": 15,
+     "denominator": 1000,
+     "wilson95": [
+      0.00911089683719635,
+      0.02460119479160246
+     ],
+     "M1": 1.0,
+     "M3": 0.985
+    },
+    "excl_identities": {
+     "M2": 0.01,
+     "s4": 10,
+     "denominator": 1000,
+     "wilson95": [
+      0.005440695309270557,
+      0.01830966530539216
+     ],
+     "M1": 1.0,
+     "M3": 0.99
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   }
+  },
+  "unsw_HGB": {
+   "10": {
+    "full": {
+     "M2": 0.135,
+     "s4": 135,
+     "denominator": 1000,
+     "wilson95": [
+      0.11521104013883013,
+      0.15758259582923498
+     ],
+     "M1": 1.0,
+     "M3": 0.865
+    },
+    "excl_identities": {
+     "M2": 0.057,
+     "s4": 57,
+     "denominator": 1000,
+     "wilson95": [
+      0.04425323441955429,
+      0.07313739772798773
+     ],
+     "M1": 1.0,
+     "M3": 0.943
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   },
+   "11": {
+    "full": {
+     "M2": 0.12,
+     "s4": 120,
+     "denominator": 1000,
+     "wilson95": [
+      0.101298942978377,
+      0.1416094999472798
+     ],
+     "M1": 1.0,
+     "M3": 0.88
+    },
+    "excl_identities": {
+     "M2": 0.048,
+     "s4": 48,
+     "denominator": 1000,
+     "wilson95": [
+      0.036393116113688354,
+      0.06306640020840869
+     ],
+     "M1": 1.0,
+     "M3": 0.952
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   },
+   "12": {
+    "full": {
+     "M2": 0.139,
+     "s4": 139,
+     "denominator": 1000,
+     "wilson95": [
+      0.11893604544071831,
+      0.1618269753386557
+     ],
+     "M1": 1.0,
+     "M3": 0.861
+    },
+    "excl_identities": {
+     "M2": 0.064,
+     "s4": 64,
+     "denominator": 1000,
+     "wilson95": [
+      0.050435979806259336,
+      0.08090107576107321
+     ],
+     "M1": 1.0,
+     "M3": 0.936
+    },
+    "excluded_present": [
+     "UNSW-A-smeansz",
+     "UNSW-A-dmeansz"
+    ]
+   }
+  }
+ }
+}

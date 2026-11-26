@@ -1,0 +1,24 @@
+{
+ "ds": "unsw",
+ "det": "XGB",
+ "N": 200,
+ "dice_version": "0.12",
+ "methods": {
+  "genetic": {
+   "returned": 0.97,
+   "M1": 0.97,
+   "M2": 0.20618556701030927,
+   "M3": 0.77,
+   "n_errors": 6,
+   "M4_pct_med": 0.10184329268292683
+  },
+  "random": {
+   "returned": 0.0,
+   "M1": 0.0,
+   "M2": null,
+   "M3": 0.0,
+   "n_errors": 200,
+   "M4_pct_med": null
+  }
+ }
+}

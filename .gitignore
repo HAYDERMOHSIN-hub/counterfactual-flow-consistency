@@ -15,14 +15,10 @@ models/
 !evidence/**
 !evidence/arrays/**/*.npz
 
-# Generated re-analysis outputs (do not commit) — produced by the verify_/exp_ scripts at run time
-tables_3_5_verified.json
+# Generated re-analysis outputs (do not commit)
 R1_6_distance_verified.json
 R2_3_cic_daycluster_verified.json
-R2_1b_identity_sensitivity.json
-confirmatory_analysis_corrected.json
 out_*.json
-logs/
 
 # Python
 __pycache__/
@@ -39,3 +35,7 @@ Thumbs.db
 .idea/
 .vscode/
 *.swp
+
+# Exception: R1 review-evidence outputs are tracked on purpose (reviewer evidence folder)
+!review_evidence/
+!review_evidence/**

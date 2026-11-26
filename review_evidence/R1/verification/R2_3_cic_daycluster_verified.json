@@ -1,0 +1,72 @@
+{
+ "cic_RF": {
+  "M2": 0.38,
+  "n_converted": 1000,
+  "n_days": 4,
+  "days": [
+   "Fri",
+   "Thu",
+   "Tue",
+   "Wed"
+  ],
+  "cases_per_day": {
+   "Fri": 273,
+   "Thu": 181,
+   "Tue": 182,
+   "Wed": 364
+  },
+  "daycluster_ci": [
+   0.196,
+   0.492
+  ],
+  "n_boot": 10000,
+  "seed": 20261007
+ },
+ "cic_XGB": {
+  "M2": 0.093,
+  "n_converted": 1000,
+  "n_days": 4,
+  "days": [
+   "Fri",
+   "Thu",
+   "Tue",
+   "Wed"
+  ],
+  "cases_per_day": {
+   "Fri": 273,
+   "Thu": 181,
+   "Tue": 182,
+   "Wed": 364
+  },
+  "daycluster_ci": [
+   0.037,
+   0.139
+  ],
+  "n_boot": 10000,
+  "seed": 20261007
+ },
+ "cic_HGB": {
+  "M2": 0.147,
+  "n_converted": 1000,
+  "n_days": 4,
+  "days": [
+   "Fri",
+   "Thu",
+   "Tue",
+   "Wed"
+  ],
+  "cases_per_day": {
+   "Fri": 273,
+   "Thu": 181,
+   "Tue": 182,
+   "Wed": 364
+  },
+  "daycluster_ci": [
+   0.072,
+   0.201
+  ],
+  "n_boot": 10000,
+  "seed": 20261007
+ },
+ "_note": "Four day-clusters only (Tue\u2013Fri); Monday is benign-only. A four-cluster bootstrap is coarse and the CI is wide/discrete \u2014 treat as a capture-dependence sensitivity check, not a precise interval. Day inferred from attack class via the CIC-IDS2017 schedule, valid by dataset construction."
+}

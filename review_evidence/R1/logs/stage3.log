@@ -1,0 +1,135 @@
+cic RF A_typed s10: flip 1.000 queries/inst 1260 immMis 0 [16s]
+cic RF B s10: flip 1.000 queries/inst 1260 immMis 0 [18s]
+cic RF C s10: flip 1.000 queries/inst 0 immMis 0 [51s]
+cic RF A s10: flip 1.000 queries/inst 1260 immMis 0 [15s]
+cic RF A_typed s11: flip 1.000 queries/inst 1260 immMis 0 [16s]
+cic RF B s11: flip 1.000 queries/inst 1260 immMis 0 [18s]
+cic RF A_typed s12: flip 1.000 queries/inst 1260 immMis 0 [16s]
+cic RF B s12: flip 1.000 queries/inst 1260 immMis 0 [18s]
+cell cic_RF OK
+cic XGB A_typed s10: flip 1.000 queries/inst 1260 immMis 0 [16s]
+cic XGB B s10: flip 1.000 queries/inst 1260 immMis 0 [18s]
+cic XGB C s10: flip 1.000 queries/inst 0 immMis 0 [50s]
+cic XGB A s10: flip 1.000 queries/inst 1260 immMis 0 [15s]
+cic XGB A_typed s11: flip 1.000 queries/inst 1260 immMis 0 [16s]
+cic XGB B s11: flip 1.000 queries/inst 1260 immMis 0 [18s]
+cic XGB A_typed s12: flip 1.000 queries/inst 1260 immMis 0 [16s]
+cic XGB B s12: flip 1.000 queries/inst 1260 immMis 0 [18s]
+cell cic_XGB OK
+cic HGB A_typed s10: flip 1.000 queries/inst 1260 immMis 0 [13s]
+cic HGB B s10: flip 1.000 queries/inst 1260 immMis 0 [15s]
+cic HGB C s10: flip 1.000 queries/inst 0 immMis 0 [49s]
+cic HGB A s10: flip 1.000 queries/inst 1260 immMis 0 [12s]
+cic HGB A_typed s11: flip 1.000 queries/inst 1260 immMis 0 [13s]
+cic HGB B s11: flip 1.000 queries/inst 1260 immMis 0 [15s]
+cic HGB A_typed s12: flip 1.000 queries/inst 1260 immMis 0 [13s]
+cic HGB B s12: flip 1.000 queries/inst 1260 immMis 0 [15s]
+cell cic_HGB OK
+unsw RF A_typed s10: flip 1.000 queries/inst 1260 immMis 0 [9s]
+unsw RF B s10: flip 1.000 queries/inst 1260 immMis 0 [11s]
+unsw RF C s10: flip 0.722 queries/inst 0 immMis 0 [11s]
+unsw RF A s10: flip 1.000 queries/inst 1260 immMis 0 [9s]
+unsw RF A_typed s11: flip 1.000 queries/inst 1260 immMis 0 [10s]
+unsw RF B s11: flip 1.000 queries/inst 1260 immMis 0 [11s]
+unsw RF A_typed s12: flip 1.000 queries/inst 1260 immMis 0 [10s]
+unsw RF B s12: flip 1.000 queries/inst 1260 immMis 0 [11s]
+cell unsw_RF OK
+unsw XGB A_typed s10: flip 1.000 queries/inst 1260 immMis 0 [10s]
+unsw XGB B s10: flip 1.000 queries/inst 1260 immMis 0 [11s]
+unsw XGB C s10: flip 0.722 queries/inst 0 immMis 0 [10s]
+unsw XGB A s10: flip 1.000 queries/inst 1260 immMis 0 [10s]
+unsw XGB A_typed s11: flip 1.000 queries/inst 1260 immMis 0 [10s]
+unsw XGB B s11: flip 1.000 queries/inst 1260 immMis 0 [11s]
+unsw XGB A_typed s12: flip 1.000 queries/inst 1260 immMis 0 [10s]
+unsw XGB B s12: flip 1.000 queries/inst 1260 immMis 0 [11s]
+cell unsw_XGB OK
+unsw HGB A_typed s10: flip 1.000 queries/inst 1260 immMis 0 [8s]
+unsw HGB B s10: flip 1.000 queries/inst 1260 immMis 0 [9s]
+unsw HGB C s10: flip 0.722 queries/inst 0 immMis 0 [10s]
+unsw HGB A s10: flip 1.000 queries/inst 1260 immMis 0 [7s]
+unsw HGB A_typed s11: flip 1.000 queries/inst 1260 immMis 0 [8s]
+unsw HGB B s11: flip 1.000 queries/inst 1260 immMis 0 [9s]
+unsw HGB A_typed s12: flip 1.000 queries/inst 1260 immMis 0 [8s]
+unsw HGB B s12: flip 1.000 queries/inst 1260 immMis 0 [9s]
+cell unsw_HGB OK
+============================================================
+R2.1 DE-DUPLICATION SENSITIVITY (model-dependent, over rebuilt reruns)
+============================================================
+  cic_RF: 0/1000 exact-duplicate cases, 1000 unique identities
+  cic_XGB: 0/1000 exact-duplicate cases, 1000 unique identities
+  cic_HGB: 0/1000 exact-duplicate cases, 1000 unique identities
+  unsw_RF: 25/1000 exact-duplicate cases, 987 unique identities
+  unsw_XGB: 25/1000 exact-duplicate cases, 987 unique identities
+  unsw_HGB: 25/1000 exact-duplicate cases, 987 unique identities
+
+Wrote experiments/R2_1_dedup/summary.json
+cic RF pool25000: coverage 1.000 elig_pool 24974 [6s]
+cic RF pool50000: coverage 1.000 elig_pool 49956 [12s]
+cic RF pool100000: coverage 1.000 elig_pool 99918 [25s]
+cic RF pool200000: coverage 1.000 elig_pool 199834 [50s]
+R2.4 cic_RF done: K25000:cov=1.000 K50000:cov=1.000 K100000:cov=1.000 K200000:cov=1.000
+cic XGB pool25000: coverage 1.000 elig_pool 24962 [6s]
+cic XGB pool50000: coverage 1.000 elig_pool 49946 [12s]
+cic XGB pool100000: coverage 1.000 elig_pool 99910 [25s]
+cic XGB pool200000: coverage 1.000 elig_pool 199799 [50s]
+R2.4 cic_XGB done: K25000:cov=1.000 K50000:cov=1.000 K100000:cov=1.000 K200000:cov=1.000
+cic HGB pool25000: coverage 1.000 elig_pool 24942 [6s]
+cic HGB pool50000: coverage 1.000 elig_pool 49906 [12s]
+cic HGB pool100000: coverage 1.000 elig_pool 99840 [24s]
+cic HGB pool200000: coverage 1.000 elig_pool 199662 [49s]
+R2.4 cic_HGB done: K25000:cov=1.000 K50000:cov=1.000 K100000:cov=1.000 K200000:cov=1.000
+unsw RF pool25000: coverage 0.722 elig_pool 24696 [1s]
+unsw RF pool50000: coverage 0.722 elig_pool 49418 [2s]
+unsw RF pool100000: coverage 0.722 elig_pool 98850 [5s]
+unsw RF pool200000: coverage 0.722 elig_pool 197726 [11s]
+R2.4 unsw_RF done: K25000:cov=0.722 K50000:cov=0.722 K100000:cov=0.722 K200000:cov=0.722
+unsw XGB pool25000: coverage 0.722 elig_pool 24712 [1s]
+unsw XGB pool50000: coverage 0.722 elig_pool 49446 [2s]
+unsw XGB pool100000: coverage 0.722 elig_pool 98889 [5s]
+unsw XGB pool200000: coverage 0.722 elig_pool 197798 [11s]
+R2.4 unsw_XGB done: K25000:cov=0.722 K50000:cov=0.722 K100000:cov=0.722 K200000:cov=0.722
+unsw HGB pool25000: coverage 0.722 elig_pool 24691 [1s]
+unsw HGB pool50000: coverage 0.722 elig_pool 49405 [2s]
+unsw HGB pool100000: coverage 0.722 elig_pool 98808 [5s]
+unsw HGB pool200000: coverage 0.722 elig_pool 197628 [10s]
+R2.4 unsw_HGB done: K25000:cov=0.722 K50000:cov=0.722 K100000:cov=0.722 K200000:cov=0.722
+unsw RF TTLfixed A_typed s10: flip 1.000 immMis 0 [10s]
+unsw RF TTLfixed B s10: flip 1.000 immMis 0 [11s]
+unsw RF TTLfixed A_typed s11: flip 1.000 immMis 0 [10s]
+unsw RF TTLfixed B s11: flip 1.000 immMis 0 [11s]
+unsw RF TTLfixed A_typed s12: flip 1.000 immMis 0 [10s]
+unsw RF TTLfixed B s12: flip 1.000 immMis 0 [11s]
+R2.5 unsw_RF done.
+unsw XGB TTLfixed A_typed s10: flip 1.000 immMis 0 [11s]
+unsw XGB TTLfixed B s10: flip 1.000 immMis 0 [12s]
+unsw XGB TTLfixed A_typed s11: flip 1.000 immMis 0 [11s]
+unsw XGB TTLfixed B s11: flip 1.000 immMis 0 [12s]
+unsw XGB TTLfixed A_typed s12: flip 1.000 immMis 0 [11s]
+unsw XGB TTLfixed B s12: flip 1.000 immMis 0 [12s]
+R2.5 unsw_XGB done.
+unsw HGB TTLfixed A_typed s10: flip 1.000 immMis 0 [8s]
+unsw HGB TTLfixed B s10: flip 1.000 immMis 0 [9s]
+unsw HGB TTLfixed A_typed s11: flip 1.000 immMis 0 [8s]
+unsw HGB TTLfixed B s11: flip 1.000 immMis 0 [9s]
+unsw HGB TTLfixed A_typed s12: flip 1.000 immMis 0 [8s]
+unsw HGB TTLfixed B s12: flip 1.000 immMis 0 [9s]
+R2.5 unsw_HGB done.
+[A] building temporal split from data/unsw_raw.pkl ...
+[A] n=2026609 train(earlier)=1418626 test(held-out)=607983
+[B] training temporal RF on 343951 earlier rows ...
+[B] temporal RF: acc 0.9783 rec 0.9918 fpr 0.0227
+[B] training temporal XGB on 343951 earlier rows ...
+[B] temporal XGB: acc 0.9797 rec 0.9855 fpr 0.0208
+[B] training temporal HGB on 343951 earlier rows ...
+[B] temporal HGB: acc 0.9793 rec 0.9881 fpr 0.0214
+[C] held-out confirmatory cases: 978
+[D] temporal unsw RF A_typed: flip 1.000 [9s]
+[D] temporal unsw RF B: flip 1.000 [11s]
+[D] temporal unsw RF C: flip 0.762 [10s]
+[D] temporal unsw XGB A_typed: flip 1.000 [10s]
+[D] temporal unsw XGB B: flip 1.000 [11s]
+[D] temporal unsw XGB C: flip 0.762 [10s]
+[D] temporal unsw HGB A_typed: flip 1.000 [7s]
+[D] temporal unsw HGB B: flip 1.000 [9s]
+[D] temporal unsw HGB C: flip 0.762 [10s]
+[E] R2.3 temporal done.
