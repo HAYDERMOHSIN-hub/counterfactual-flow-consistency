@@ -25,12 +25,19 @@ the current code, not a logged historical run (see README, "Scope of reproducibi
   arrays are available on request). A full manifest over models+arrays is produced on the author's
   machine and is not part of this repository.
 
+## Integrity manifests
+Three independent SHA-256 manifests ship with this repository, each covering only its own
+files: `evidence/SHA256SUMS.txt` (the 66 arrays only), `SOURCE_PROTOCOL_SHA256SUMS.txt`
+(the `code/` and `protocol/` files), and `review_evidence/R1/SHA256SUMS.txt` (the R1 run
+outputs). See `MANIFESTS.md` for the scope-and-verify map and for the external pre-specified
+protocol deposit (Zenodo 10.5281/zenodo.23483089 / 23483090 / 23672368). A SHA-256 digest
+proves file integrity, not the date a file was created or a computation was run.
+
 ## RE-ANALYSE — runs from a clean checkout (from the repository root)
 ```bash
 pip install -r requirements.txt
-python code/verify_tables_3_5.py                 # Tables 3-5: states, M1/M2/M3/M4, Wilson+5% verdict, Holm families
-python code/verify_R1_6_distance.py              # R1.6: paired distances, rank-biserial, zero-distance counts, Holm
-python code/extract_conf_idx.py                  # (tool) reconstruct the confirmatory index from the arrays
+python code/verify_tables_3_5.py                 # Tables 3-5: five-state counts + M1/M2/M3 per cell/arm
+python code/verify_R1_6_distance.py              # R1.6: paired distances, rank-biserial, zero-distance counts
 python code/exp_R2_1b_identity_sensitivity.py    # R2.1: identity-sensitivity (all 18 cell x seed)
 python code/verify_R2_3_cic_daycluster.py        # R2.3: CIC day-clustered bootstrap CIs
 python code/verify_R1_5_metric_definition.py     # R1.5: metric-definition check
@@ -42,9 +49,8 @@ These default to the arrays in `evidence/arrays/`; see `evidence/README.md` for 
 | R1.6 distances / rank-biserial / zero-dist | `verify_R1_6_distance.py` (re-analyse) | confirmatory A_typed+C arrays, corrected B arrays | `evidence/arrays/` (in repo) | `python code/verify_R1_6_distance.py` | `R1_6_distance_verified.json` |
 | R2.3 CIC day-clustered CIs | `verify_R2_3_cic_daycluster.py` (re-analyse) | confirmatory A_typed arrays | `evidence/arrays/confirmatory/` (in repo) | `python code/verify_R2_3_cic_daycluster.py` | `R2_3_cic_daycluster_verified.json` |
 | R1.5 metric definition | `verify_R1_5_metric_definition.py` (re-analyse) | none (synthetic cases) | — | `python code/verify_R1_5_metric_definition.py` | prints PASS |
-| **Tables 3–5 (full: states, M1–M4, Wilson+verdict, Holm families)** | `verify_tables_3_5.py` (re-analyse) | confirmatory A_typed/A/C + corrected B arrays | `evidence/arrays/` (in repo) | `python code/verify_tables_3_5.py` | `tables_3_5_verified.json` |
-| Confirmatory index (tool) | `extract_conf_idx.py` (reconstruct) | the seed-10 arrays' `test_idx` | `evidence/arrays/` (in repo) | `python code/extract_conf_idx.py` | `data/{ds}_conf_idx_20261008.npy` |
-| Tables 3–5 (REGENERATE the arrays) | `exp3_arms_rerun.py <ds> <det>` then `exp3_reproduce_gate.py` (re-generate / verify) | trained models + confirmatory index (run `extract_conf_idx.py` first) | NOT in repo (re-train, or author on request) | `python code/exp3_arms_rerun.py cic RF` … | per-instance arrays + gate log |
+| **Tables 3–5 (M1/M2/M3, five states)** | `verify_tables_3_5.py` (re-analyse) | confirmatory A_typed/A/C + corrected B arrays | `evidence/arrays/` (in repo) | `python code/verify_tables_3_5.py` | `tables_3_5_verified.json` |
+| Tables 3–5 (REGENERATE the arrays) | `exp3_arms_rerun.py <ds> <det>` then `exp3_reproduce_gate.py` (re-generate / verify) | trained models + confirmatory index | NOT in repo (re-train, or author on request) | `python code/exp3_arms_rerun.py cic RF` … | per-instance arrays + gate log |
 | R2.1 identity sensitivity | `exp_R2_1b_identity_sensitivity.py` (re-analyse) | A_typed arrays, 6 cells × seeds 10/11/12 | `evidence/arrays/confirmatory/` (in repo, default path) | `python code/exp_R2_1b_identity_sensitivity.py` | `R2_1b_identity_sensitivity.json` |
 | R2.2 DiCE audit | `exp_R2_2_dice.py <ds> <det>` (re-generate) | models + index + `dice-ml` | NOT in repo | `pip install -r requirements-dice.txt; python code/exp_R2_2_dice.py cic RF` … | DiCE arrays + summaries |
 | R2.4 pool-size sweep | `exp_R2_4_poolsize.py <ds> <det>` (re-generate) | models + index | NOT in repo | `python code/exp_R2_4_poolsize.py cic RF` … | pool-size summaries |
